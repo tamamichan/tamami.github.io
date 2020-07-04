@@ -1,0 +1,51 @@
+.contact {
+    background-image: url(../image/photography-of-night-sky-733475.jpg);
+    background-size: cover;
+    background-color:rgba(255,255,255,0.5);
+    // background-blend-mode: soft-light;
+    background-attachment: fixed;
+    color: white;
+    
+    
+}
+
+
+.contact-text {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 2.5rem;
+}
+
+.contact-br {
+    @include pc {
+        display: none;
+    }
+    @include tab {
+        display: none;
+    }
+}
+
+.contact_lb {
+    display: block;
+    text-align: center;
+}
+
+input {
+    width: 60%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 60%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 10%;
+    @include sp {
+        width: 20%;
+    }
+}

@@ -1,0 +1,57 @@
+.service {
+    background-image: url(../image/scenic-view-of-ocean-during-sunset-1032650.jpg);
+    background-position: center;
+    background-color:rgba(255,255,255,0.5);
+    background-blend-mode:lighten;
+    background-attachment: fixed;
+    
+}
+
+
+.service-wrap {
+    display: flex;
+    justify-content: space-between;
+    @include sp {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+
+.service-item {
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+    @include sp {
+        margin: 30px auto;
+    }
+    
+    &_title {
+        font-size: 2rem;
+        padding-bottom: 15px;
+    }
+    &_content {
+        font-size: 1.8rem;
+        text-align: left;
+    }
+    @include sp {
+        width: 100%;    
+    }
+}
+
+.service-img {
+    padding-bottom: 20px;
+}
+
+
+.my-big {
+    font-size: 20rem;
+    @include sp {
+        font-size: 15rem;
+    }
+}
+
+.service-item_content {
+    line-height: 2.5rem;
+}

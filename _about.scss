@@ -1,0 +1,31 @@
+.about-wrap {
+     font-size: 1.8rem;
+     line-height: 2.5rem;
+     text-align: center;
+     
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin: 25px auto;
+    
+
+}
+
+
+img {
+    width: 100%;
+    transform: translate(10px, -20px);
+}
+
+.profile {
+    line-height: 2.5rem;
+}
+
+.profile-content {
+    display: inline-block;
+    text-align: left;
+}

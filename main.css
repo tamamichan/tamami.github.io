@@ -1,0 +1,449 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:visited {
+  color: inherti;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=reset.css.map */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 12px;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 600px) {
+  .title {
+    margin-bottom: 40px;
+  }
+}
+
+.inner {
+  width: 80%;
+  padding: 100px 0;
+  margin: 0 auto;
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+}
+
+.gl-nav {
+  position: fixed;
+  right: -320px;
+  top: 0;
+  width: 320px;
+  height: 100vh;
+  padding-top: 20px;
+  background-color: #fff;
+  transition: all 1s;
+  z-index: 200;
+}
+
+.ham {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.gl-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gl-nav__item {
+  text-align: center;
+  padding: 0 14px;
+}
+
+.gl-nav__item a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: gray;
+}
+
+.gl-nav__item a:hover {
+  background-color: #eee;
+}
+
+.ham__line {
+  position: absolute;
+  left: 11px;
+  width: 18px;
+  height: 1.5px;
+  background-color: white;
+  transition: all .6s;
+}
+
+.ham__line--1 {
+  top: 14px;
+}
+
+.ham__line--2 {
+  top: 20px;
+}
+
+.ham__line--3 {
+  top: 26px;
+}
+
+.black-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: #000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 2s;
+  cursor: pointer;
+}
+
+.nav-open .gl-nav {
+  right: 0;
+}
+
+.nav-open .black-bg {
+  opacity: .6;
+  visibility: visible;
+}
+
+.first-v {
+  background-image: url(../image/white-and-gray-bird-on-the-bag-of-brown-and-black-pig-66258.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+.catch {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 350px;
+  color: white;
+}
+@media screen and (min-width: 960px) {
+  .catch .pc-br {
+    display: none;
+  }
+}
+@media screen and (max-width: 959px) and (min-width: 601px) {
+  .catch .pc-br {
+    display: none;
+  }
+}
+
+span {
+  display: inline-block;
+  width: 20px;
+}
+
+.about-wrap {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+.profile-img {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  margin: 25px auto;
+}
+
+img {
+  width: 100%;
+  transform: translate(10px, -20px);
+}
+
+.profile {
+  line-height: 2.5rem;
+}
+
+.profile-content {
+  display: inline-block;
+  text-align: left;
+}
+
+.service {
+  background-image: url(../image/scenic-view-of-ocean-during-sunset-1032650.jpg);
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten;
+  background-attachment: fixed;
+}
+
+.service-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+  .service-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.service-item {
+  width: 40%;
+  text-align: center;
+  margin: 0 auto;
+}
+@media screen and (max-width: 600px) {
+  .service-item {
+    margin: 30px auto;
+  }
+}
+.service-item_title {
+  font-size: 2rem;
+  padding-bottom: 15px;
+}
+.service-item_content {
+  font-size: 1.8rem;
+  text-align: left;
+}
+@media screen and (max-width: 600px) {
+  .service-item {
+    width: 100%;
+  }
+}
+
+.service-img {
+  padding-bottom: 20px;
+}
+
+.my-big {
+  font-size: 20rem;
+}
+@media screen and (max-width: 600px) {
+  .my-big {
+    font-size: 15rem;
+  }
+}
+
+.service-item_content {
+  line-height: 2.5rem;
+}
+
+.skill-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.my-big {
+  font-size: 20rem;
+}
+@media screen and (max-width: 600px) {
+  .my-big {
+    font-size: 12rem;
+  }
+}
+
+.skill-item {
+  width: 50%;
+  text-align: center;
+}
+.skill-item:hover {
+  opacity: 0.5;
+}
+@media screen and (max-width: 600px) {
+  .skill-item {
+    margin-bottom: 20px;
+  }
+}
+
+.skill-item_title {
+  font-size: 2rem;
+}
+
+.skill-item_content {
+  font-size: 2rem;
+}
+
+.contact {
+  background-image: url(../image/photography-of-night-sky-733475.jpg);
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-attachment: fixed;
+  color: white;
+}
+
+.contact-text {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 2.5rem;
+}
+
+@media screen and (min-width: 960px) {
+  .contact-br {
+    display: none;
+  }
+}
+@media screen and (max-width: 959px) and (min-width: 601px) {
+  .contact-br {
+    display: none;
+  }
+}
+
+.contact_lb {
+  display: block;
+  text-align: center;
+}
+
+input {
+  width: 60%;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 60%;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 10%;
+}
+@media screen and (max-width: 600px) {
+  button {
+    width: 20%;
+  }
+}
+
+footer {
+  font-size: large;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/*# sourceMappingURL=main.css.map */

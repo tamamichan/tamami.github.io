@@ -1,0 +1,32 @@
+.first-v {
+    background-image: url(../image/white-and-gray-bird-on-the-bag-of-brown-and-black-pig-66258.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.catch {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 350px;
+    color: white;
+    @include pc {
+        .pc-br {
+            display: none;
+        }
+    }
+    @include tab {
+        .pc-br {
+            display: none;
+        }
+    }
+    
+}
+
+span {
+    display: inline-block;
+    width: 20px;
+}
